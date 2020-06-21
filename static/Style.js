@@ -6,17 +6,21 @@ const gray = "#8A969A";
 export default <style>{`
   body{
     margin: 0 auto;
-    width: 1200px;
     font-family: fot-tsukuardgothic-std,sans-serif;
     font-weight: 700;
     font-style: normal;
     background-image: url("../static/background_circle.svg");
     background-repeat: no-repeat;
     background-color: #F7F7F7;
+    overflow-x : hidden;
   }
   a{
     text-decoration: none;
     color:${blue};
+  }
+  .wrapper{
+    width: 1200px;
+    margin: 0 auto;
   }
   .fv{
     padding-top:15vh;
