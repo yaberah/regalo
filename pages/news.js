@@ -6,7 +6,7 @@ import Button from '../components/Button';
 import NewsItem from '../components/NewsItem';
 import css from 'styled-jsx/css';
 import fetch from 'node-fetch';
-import { fetchAPI } from '../lib/api';
+import { microcmsAPI } from '../lib/microcms';
 
 const news = ({allPosts}) => {
   return(
@@ -61,7 +61,7 @@ const news = ({allPosts}) => {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = await fetchAPI() || [];
+  const allPosts = await microcmsAPI() || [];
   return { props : { allPosts } }
 }
 

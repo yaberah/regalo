@@ -4,8 +4,9 @@ import Layout from '../components/Layout';
 import Button from '../components/Button';
 import Access from '../components/Access';
 import fetch from "isomorphic-unfetch";
+import { instagramAPI } from '../lib/instagram';
 
-const top = () => {
+const top = ({ instagramPosts }) => {
   return(
     <div className="wrapper">
       <Layout>
@@ -82,21 +83,23 @@ const top = () => {
 
         <section className="instagram">
           <h2>INSTAGRAM</h2>
-          <div className="instagram_wrapper">{/*Instagram API*/}
-            <div className="instagram_item"></div>
-            <div className="instagram_item"></div>
-            <div className="instagram_item"></div>
-            <div className="instagram_item"></div>
-            <div className="instagram_item"></div>
-            <div className="instagram_item"></div>
-            <div className="instagram_item"></div>
-            <div className="instagram_item"></div>
+          <div className="instagram_wrapper">
+            {instagramPosts.data.slice(0,8).map( (instagramPost) => {
+              return (
+                <div className="instagram_item"><img src={instagramPost.media_url} alt=""/></div>
+              )
+            })}
           </div>
         </section>
 
       </Layout>
     </div>
   )
+}
+
+export const getStaticProps = async () => {
+  const instagramPosts = await instagramAPI() || [];
+  return { props : { instagramPosts } }
 }
 
 export default top;

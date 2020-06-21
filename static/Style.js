@@ -187,9 +187,22 @@ export default <style>{`
   }
   .instagram_item{
     background-color:#F7F7F7;
-    width:220px;
-    height:220px;
+    width:22%;
     margin-top:24px;
+    position: relative;
+  }
+  .instagram_item::before{
+    content: "";
+    display: block;
+    padding-top : 100%;
+
+  }
+  .instagram_item img{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
   }
   .fv_right{
     position:absolute;
