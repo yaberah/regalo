@@ -4,18 +4,21 @@ import Layout from '../../components/Layout';
 import Subpage from '../../components/Subpage';
 import { microcmsAPI } from '../../lib/microcms';
 import { getAllPostIds, getPostData } from '../../lib/microcms';
+import css from 'styled-jsx/css';
 
 const Post = ({ postData }) => {
+  const date = new Date(postData.createdAt);
   return(
     <div>
       <Layout>
         <Subpage title={postData.title}>
-          <div>{postData.createdAt}</div>
+          <div className="post-date">{date.toLocaleDateString()}</div>
           <section className="sub">
-            <div dangerouslySetInnerHTML={createMarkup(postData)} ></div>
+            <div className="post-contents" dangerouslySetInnerHTML={createMarkup(postData)} ></div>
           </section>
         </Subpage>
       </Layout>
+      <style jsx>{styles}</style>
     </div>
   )
 }
@@ -40,5 +43,8 @@ export const getStaticProps = async ({ params }) => {
     }
   }
 }
+
+const styles = css`
+`
 
 export default Post;

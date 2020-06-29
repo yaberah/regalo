@@ -33,6 +33,7 @@ const news = ({allPosts}) => {
                     <NewsItem
                       date={date.toLocaleDateString()}
                       title={post.title}
+                      id={post.id}
                     />
                   )
                 }

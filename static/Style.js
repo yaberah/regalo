@@ -251,4 +251,22 @@ export default <style>{`
   .sub span{
     color:${blue};
   }
+  .post-contents h1 {
+    font-size: 28px;
+    color: ${blue};
+    margin: 24px 0;
+  }
+  .post-contents h2 {
+    font-size: 22px;
+    color: ${gray};
+    margin: 16px 0;
+  }
+  .post-contents p{
+    margin: 0;
+  }
+  .post-date{
+    padding : 0px 120px 24px;
+    background-color: #fff;
+    color: ${gray};
+  }
   `}</style>

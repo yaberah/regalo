@@ -7,7 +7,7 @@ const Header = () => {
   return(
     <header>
       <Link href="/">
-        <a href="">
+        <a>
           <h1>
             <figure><img src="../static/logo.svg" alt=""/></figure>
           </h1>
@@ -15,10 +15,10 @@ const Header = () => {
       </Link>
       <nav>
         <ul>
-          <li><Link href="about"><a>はじめに</a></Link></li>
-          <li><Link href="menu"><a>メニュー</a></Link></li>
-          <li><Link href="news"><a>お知らせ</a></Link></li>
-          <li><Link href="access"><a>アクセス</a></Link></li>
+          <li><Link href="/about"><a>はじめに</a></Link></li>
+          <li><Link href="/menu"><a>メニュー</a></Link></li>
+          <li><Link href="/news"><a>お知らせ</a></Link></li>
+          <li><Link href="/access"><a>アクセス</a></Link></li>
         </ul>
       </nav>
       <div className="telephone">

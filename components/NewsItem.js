@@ -6,10 +6,10 @@ const NewsItem = (props) => {
   return(
     <li>
       <span>{props.date}</span>
-      <Link href="#">
+      <Link href="/posts/[id]" as={`/posts/${props.id}`}>
         <a className="title">{props.title}</a>
       </Link>
-      <Link href="#">
+      <Link href="/posts/[id]" as={`/posts/${props.id}`}>
         <a className="more">もっと見る</a>
       </Link>
       <style jsx>{styles}</style>
