@@ -2,12 +2,16 @@ import React from 'react';
 import css from 'styled-jsx/css';
 import Map from './Map';
 
-const Access = (props) => {
+const Access = ( props ) => {
   const map_style = props.type === 'top' ? 'top' : 'sub';
   return(
     <section className={map_style}>
       <div className="map_wrapper">
-        <Map />
+        <Map
+          apiKey={props.apiKey}
+          lat={props.lat}
+          lng={props.lng}
+          defaultZoom={props.defaultZoom}/>
       </div>
       <address>
         <dl>

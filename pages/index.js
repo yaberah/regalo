@@ -5,8 +5,9 @@ import Button from '../components/Button';
 import Access from '../components/Access';
 import fetch from "isomorphic-unfetch";
 import { instagramAPI } from '../lib/instagram';
+import { googlemapsAPI } from '../lib/googlemapsAPI';
 
-const top = ({ instagramPosts }) => {
+const top = ({ instagramPosts, mapData }) => {
   return(
     <div className="wrapper">
       <Layout>
@@ -79,7 +80,13 @@ const top = ({ instagramPosts }) => {
           </div>
         </section>
 
-        <Access type="top"/>
+        <Access
+          type="top"
+          apiKey={mapData.key}
+          lat={mapData.lat}
+          lng={mapData.lng}
+          defaultZoom={mapData.defaultZoom}
+          />
 
         <section className="instagram">
           <h2>INSTAGRAM</h2>
@@ -99,7 +106,8 @@ const top = ({ instagramPosts }) => {
 
 export const getStaticProps = async () => {
   const instagramPosts = await instagramAPI() || [];
-  return { props : { instagramPosts } }
+  const mapData = await googlemapsAPI() || [];
+  return { props : { instagramPosts, mapData } }
 }
 
 export default top;

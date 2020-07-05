@@ -11,21 +11,21 @@ const Pin = (props) => {
   )
 }
 
-const Map = () => {
+const Map = (props) => {
   return(
     <GoogleMapReact
       bootstrapURLKeys={{
-        key: process.env.GOOGLE_API_KEY,
+        key: props.apiKey
       }}
       defaultCenter={{
-        lat: 35.487099,
-        lng: 139.625780
+        lat: props.lat,
+        lng: props.lng
       }}
-      defaultZoom={15}
+      defaultZoom={props.defaultZoom}
     >
     <Pin
-      lat={35.487099}
-      lng={139.625780}
+      lat={props.lat}
+      lng={props.lng}
     >
     Regalo
     </Pin>
