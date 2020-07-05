@@ -34,7 +34,7 @@ const createMarkup = (postData) => {
 }
 
 export const getStaticPaths = async () => {
-  const paths = await getAllPostIds() || '';
+  const paths = await getAllPostIds();
    return {
      paths,
      fallback: true
