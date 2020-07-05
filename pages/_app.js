@@ -34,6 +34,8 @@ const MyApp = ({ Component, pageProps }) => {
   //             Typekit.load(config)
   //         } catch (e) {}
   //     };
+  //     console.log(tk);
+  //     console.log(s);
   //     s.parentNode.insertBefore(tk, s)})(document);
   // }
 
