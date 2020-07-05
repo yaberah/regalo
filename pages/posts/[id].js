@@ -7,7 +7,7 @@ import { getAllPostIds, getPostData } from '../../lib/microcms';
 import css from 'styled-jsx/css';
 
 const Post = ({ postData }) => {
-  const date = new Date(postData.createdAt);
+  const date = new Date(postData.updatedAt);
   return(
     <div>
       <Layout>
