@@ -22,6 +22,7 @@ li {
   border-top : 1px #F7F7F7 solid;
   padding:  32px 0;
   display:flex;
+  width: 100%;
 }
 span{
   margin-right: 32px;

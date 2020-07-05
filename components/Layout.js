@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from './Header';
 import Footer from './Footer';
 import Contact from './Contact';
+import Line from '../components/Line';
 import Reset from '../static/Reset';
 import Style from '../static/Style';
 import css from 'styled-jsx/css';
@@ -19,6 +20,7 @@ const Layout = ({children}) => {
       {Style}
       <style jsx>{styles}</style>
       <Header />
+      <Line />
       {children}
       <Contact />
       <Footer />

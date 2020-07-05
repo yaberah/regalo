@@ -4,7 +4,7 @@ import css from 'styled-jsx/css'
 
 const Contact = () => {
   return(
-    <section>
+    <section id="contact">
       <h2>ご予約・お問い合わせはこちらから</h2>
       <div>
         <address>

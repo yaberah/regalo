@@ -90,6 +90,39 @@ export default <style>{`
   .about_left{
     width:394px;
   }
+  .about_right{
+    width: 60%;
+    margin: 0 auto;
+  }
+  .about_right ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top:56px;
+  }
+  .about_right li{
+    width: 25%;
+    margin-bottom: 40px;
+  }
+  .about_right li:nth-child(4){
+    margin-left: 15%;
+  }
+  .about_right li:nth-child(5){
+    margin-right: 15%;
+  }
+  .about_right span{
+    text-align:center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 16px;
+    color:#8A969A;
+  }
+  .about_right figure{
+    height:150px;
+    border-radius: 150px;
+    background-color:#F7F7F7;
+  }
   .about h2 {
     font-size: 54px;
     color: ${blue};
@@ -151,6 +184,9 @@ export default <style>{`
     border-radius:100px;
     background-color:${blue};
     margin: 0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
   .voice_card span{
     display: inline-block;

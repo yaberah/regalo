@@ -25,7 +25,7 @@ const Header = () => {
         <p><img src="../static/Icon_telephone.svg" /><a href="tel:09061069510">090-6106-9510</a></p>
         <span>受付時間 9:00-13:00 / 14:30-17:00</span>
       </div>
-      <NextLink href="#">
+      <NextLink href="#contact">
         <a className="button">ご予約・お問い合わせ<img src="../static/Icon_arrow.svg" /></a>
       </NextLink>
       <style jsx>{styles}</style>
