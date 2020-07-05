@@ -1,33 +1,33 @@
 import React from 'react';
-import Link from 'next/Link';
+import NextLink from 'next/link';
 import css from 'styled-jsx/css'
 
 
 const Header = () => {
   return(
     <header>
-      <Link href="/">
+      <NextLink href="/">
         <a>
           <h1>
             <figure><img src="../static/logo.svg" alt=""/></figure>
           </h1>
         </a>
-      </Link>
+      </NextLink>
       <nav>
         <ul>
-          <li><Link href="/about"><a>はじめに</a></Link></li>
-          <li><Link href="/menu"><a>メニュー</a></Link></li>
-          <li><Link href="/news"><a>お知らせ</a></Link></li>
-          <li><Link href="/access"><a>アクセス</a></Link></li>
+          <li><NextLink href="/about"><a>はじめに</a></NextLink></li>
+          <li><NextLink href="/menu"><a>メニュー</a></NextLink></li>
+          <li><NextLink href="/news"><a>お知らせ</a></NextLink></li>
+          <li><NextLink href="/access"><a>アクセス</a></NextLink></li>
         </ul>
       </nav>
       <div className="telephone">
         <p><img src="../static/Icon_telephone.svg" /><a href="tel:09061069510">090-6106-9510</a></p>
         <span>受付時間 9:00-13:00 / 14:30-17:00</span>
       </div>
-      <Link href="#">
+      <NextLink href="#">
         <a className="button">ご予約・お問い合わせ<img src="../static/Icon_arrow.svg" /></a>
-      </Link>
+      </NextLink>
       <style jsx>{styles}</style>
     </header>
   )

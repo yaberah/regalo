@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/Link';
+import NextLink from 'next/link';
 import Layout from '../../components/Layout';
 import Subpage from '../../components/Subpage';
 import { microcmsAPI } from '../../lib/microcms';

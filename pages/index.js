@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/Link';
+import NextLink from 'next/link';
 import Layout from '../components/Layout';
 import Button from '../components/Button';
 import Access from '../components/Access';
@@ -33,12 +33,12 @@ const top = ({ instagramPosts }) => {
         <section className="news">
           <h2>NEWS</h2>
           <span>2020.5.1</span>
-          <Link href="#">
+          <NextLink href="#">
             <a className="data">5月の休診日のお知らせ</a>
-          </Link>
-          <Link href="news">
+          </NextLink>
+          <NextLink href="news">
             <a className="more">もっと見る<img src="../static/Icon_arrow.svg" alt="arrow"/></a>
-          </Link>
+          </NextLink>
         </section>
 
         <section className="about">

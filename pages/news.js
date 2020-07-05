@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/Link';
+import NextLink from 'next/link';
 import Layout from '../components/Layout';
 import Subpage from '../components/Subpage';
 import Button from '../components/Button';
@@ -18,9 +18,9 @@ const news = ({allPosts}) => {
           {/*
             <div>
               <ul className="year">
-                <li><Link href="#"><a>2020</a></Link></li>
-                <li><Link href="#"><a>2019</a></Link></li>
-                <li><Link href="#"><a>2018</a></Link></li>
+                <li><NextLink href="#"><a>2020</a></NextLink></li>
+                <li><NextLink href="#"><a>2019</a></NextLink></li>
+                <li><NextLink href="#"><a>2018</a></NextLink></li>
               </ul>
             </div>
           */}
@@ -44,11 +44,11 @@ const news = ({allPosts}) => {
             {/*
             <div className="pager">
               <ul>
-                <li><Link href=""><a>1</a></Link></li>
-                <li><Link href=""><a>2</a></Link></li>
-                <li><Link href=""><a>3</a></Link></li>
+                <li><NextLink href=""><a>1</a></NextLink></li>
+                <li><NextLink href=""><a>2</a></NextLink></li>
+                <li><NextLink href=""><a>3</a></NextLink></li>
                 <li>…</li>
-                <li><Link href=""><a>13</a></Link></li>
+                <li><NextLink href=""><a>13</a></NextLink></li>
               </ul>
             </div>
             */}

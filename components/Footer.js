@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/Link';
+import NextLink from 'next/link';
 import css from 'styled-jsx/css'
 
 const Footer = () => {
@@ -17,14 +17,14 @@ const Footer = () => {
           </div>
           <nav>
             <ul>
-              <li><Link href="about"><a>はじめに</a></Link></li>
-              <li><Link href="menu"><a>メニュー</a></Link></li>
-              <li><Link href="news"><a>お知らせ</a></Link></li>
-              <li><Link href="access"><a>アクセス</a></Link></li>
+              <li><NextLink href="about"><a>はじめに</a></NextLink></li>
+              <li><NextLink href="menu"><a>メニュー</a></NextLink></li>
+              <li><NextLink href="news"><a>お知らせ</a></NextLink></li>
+              <li><NextLink href="access"><a>アクセス</a></NextLink></li>
             </ul>
           </nav>
         </div>
-        <Link href="#"><a className="back_top"><img src="../static/Icon_arrow2.svg"/></a></Link>
+        <NextLink href="#"><a className="back_top"><img src="../static/Icon_arrow2.svg"/></a></NextLink>
         <small>Copyright © 2020 Regalo. All Rights Reserved.</small>
       </div>
       <style jsx>{styles}</style>

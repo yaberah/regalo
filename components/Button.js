@@ -1,16 +1,16 @@
 import React from 'react';
-import Link from 'next/Link';
+import NextLink from 'next/link';
 import css from 'styled-jsx/css'
 
 const Button = ({children}) => {
   return(
-    <Link href="#">
+    <NextLink href="#">
         <a>
           <span>{children}</span>
           <img src="../static/Icon_arrow.svg" alt="arrow"/>
           <style jsx>{styles}</style>
         </a>
-    </Link>
+    </NextLink>
   )
 }
 

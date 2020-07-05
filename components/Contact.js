@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/Link';
+import NextLink from 'next/link';
 import css from 'styled-jsx/css'
 
 const Contact = () => {
@@ -12,9 +12,9 @@ const Contact = () => {
           <p>受付時間 9:00-13:00 / 14:30-17:00<br/>(定休日 日曜日・祝日)</p>
         </address>
         <div className="line">
-          <Link href="#">
+          <NextLink href="#">
             <a><img src="../static/Icon_line_white.svg" alt="line"/>LINEでのご予約</a>
-          </Link>
+          </NextLink>
         </div>
       </div>
       <style jsx>{styles}</style>
