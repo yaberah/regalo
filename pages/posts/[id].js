@@ -7,20 +7,26 @@ import { getAllPostIds, getPostData } from '../../lib/microcms';
 import css from 'styled-jsx/css';
 
 const Post = ({ postData }) => {
-  const date = new Date(postData.updatedAt);
-  return(
-    <div>
-      <Layout>
-        <Subpage title={postData.title}>
-          <div className="post-date">{date.toLocaleDateString()}</div>
-          <section className="sub">
-            <div className="post-contents" dangerouslySetInnerHTML={createMarkup(postData)} ></div>
-          </section>
-        </Subpage>
-      </Layout>
-      <style jsx>{styles}</style>
-    </div>
-  )
+  if ( !postData ) {
+    return (
+      <p>投稿がありません</p>
+    )
+  } else {
+    const date = new Date(postData.updatedAt);
+    return(
+      <div>
+        <Layout>
+          <Subpage title={postData.title}>
+            <div className="post-date">{date.toLocaleDateString()}</div>
+            <section className="sub">
+              <div className="post-contents" dangerouslySetInnerHTML={createMarkup(postData)} ></div>
+            </section>
+          </Subpage>
+        </Layout>
+        <style jsx>{styles}</style>
+      </div>
+    )
+  }
 }
 
 const createMarkup = (postData) => {
@@ -28,7 +34,7 @@ const createMarkup = (postData) => {
 }
 
 export const getStaticPaths = async () => {
-  const paths = await getAllPostIds();
+  const paths = await getAllPostIds() || '';
    return {
      paths,
      fallback: true
@@ -36,7 +42,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }) => {
-  const postData = await getPostData(params.id);
+  const postData = await getPostData(params.id) || '';
   return{
     props: {
       postData
