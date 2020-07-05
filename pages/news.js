@@ -27,10 +27,11 @@ const news = ({allPosts}) => {
 
             <div>{/*article list*/}
               <ul className="article-list">
-                {allPosts.contents.map( (post) => {
+                {allPosts.contents.map( (post, i) => {
                   const date = new Date(post.updatedAt);
                   return(
                     <NewsItem
+                      key={i}
                       date={date.toLocaleDateString()}
                       title={post.title}
                       id={post.id}
