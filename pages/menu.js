@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import Layout from '../components/Layout';
 import Subpage from '../components/Subpage';
 import Button from '../components/Button';
+import css from 'styled-jsx/css'
 
 const menu = () => {
   return(
@@ -11,7 +12,7 @@ const menu = () => {
         <Subpage title="メニュー" enTitle="Menu">
           <section className="sub">
             <p>REGALO(レガ-ロ)では患者の皆さんの不調を改善できる背術を提供し、体だけでなく心も健康になれるようにサポート致します。</p>
-            <h3>スリムバンビ</h3>
+            <h4>スリムバンビ</h4>
             <p>初回体験45分 ¥5,000
   →2回目以降45分 ¥8,000
 5回数券 ¥30,000（¥6,000/回）
@@ -29,8 +30,13 @@ const menu = () => {
           </section>
         </Subpage>
       </Layout>
+      <style jsx>{styles}</style>
     </div>
   )
 }
+
+const styles = css`
+
+`
 
 export default menu;

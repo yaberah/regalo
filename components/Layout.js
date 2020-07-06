@@ -15,6 +15,7 @@ const Layout = ({children}) => {
         <title>横浜の美容整体サロン | Regalo</title>
         <script src="https://use.typekit.net/zzl2axt.js"></script>
         <script dangerouslySetInnerHTML={{ __html: 'try{Typekit.load({ async: false });}catch(e){}' }} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       {Reset}
       {Style}
