@@ -4,6 +4,9 @@ const blue = "#68B9CE";
 const gray = "#8A969A";
 
 export default <style>{`
+  html{
+    font-family: fot-tsukuardgothic-std,sans-serif;
+  }
   @media screen and (min-width: 415px) {
     .sp{
       display:none !important;
@@ -12,7 +15,6 @@ export default <style>{`
 
     body{
       margin: 0 auto;
-      font-family: fot-tsukuardgothic-std,sans-serif;
       font-weight: 700;
       font-style: normal;
       background-image: url("../static/background_circle.svg");
