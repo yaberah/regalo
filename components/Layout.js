@@ -21,7 +21,9 @@ const Layout = ({children}) => {
       {Style}
       <style jsx>{styles}</style>
       <Header />
-      <Line />
+      {/*
+        <Line />
+        */}
       {children}
       <Contact />
       <Footer />

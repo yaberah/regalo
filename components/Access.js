@@ -69,76 +69,81 @@ const Access = ( props ) => {
 }
 
 const styles = css`
-section{
-  background-color: #fff;
-}
-.top .map_wrapper{
-  background-color:gray;
-  width:100vw;
-  position:relative;
-  left: 50%;
-  transform: translateX(-50%);
-  height:500px;
-}
-.sub .map_wrapper{
-  background-color:gray;
-  width:100%;
-  position:relative;
-  left: 50%;
-  transform: translateX(-50%);
-  height:500px;
-}
-address{
-  width:960px;
-  margin: 0 auto;
-  margin-top:48px;
-  letter-spacing: 0.15em;
-  line-height:1.5em;
-}
-dl{
-  display: flex;
-  flex-wrap:wrap;
-}
-dt{
-  width:20%;
-  color: #42B4D1;
-  font-size:20px;
-  border-bottom:1px solid #F7F7F7;
-  padding: 32px 0;
-}
-dd{
-  width:80%;
-  color: #8A969A;
-  font-size:16px;
-  border-bottom:1px solid #F7F7F7;
-  padding: 32px 0;
-}
-table{
-  margin-top:32px;
-  width:100%;
-  background-color:red;
-  text-align:center;
-  border: 1px solid #F7F7F7;
-}
-th{
-  background-color:#68B9CE;
-  color:#fff;
-  height:48px;
-  line-height:48px;
-  border: 1px solid #F7F7F7;
-}
-td{
-  background-color:#fff;
-  color:#AAAAAA;
-  height:48px;
-  line-height:48px;
-  border: 1px solid #F7F7F7;
-}
-th:first-child,td:first-child{
-  width:20%;
-}
-dt:last-of-type,dd:last-of-type{
-  border: none;
+@media screen and (min-width: 415px) {
+  .sp{
+    display:none !important;
+  }
+  section{
+    background-color: #fff;
+  }
+  .top .map_wrapper{
+    background-color:gray;
+    width:100vw;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height:500px;
+  }
+  .sub .map_wrapper{
+    background-color:gray;
+    width:100%;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height:500px;
+  }
+  address{
+    width:960px;
+    margin: 0 auto;
+    margin-top:48px;
+    letter-spacing: 0.15em;
+    line-height:1.5em;
+  }
+  dl{
+    display: flex;
+    flex-wrap:wrap;
+  }
+  dt{
+    width:20%;
+    color: #42B4D1;
+    font-size:20px;
+    border-bottom:1px solid #F7F7F7;
+    padding: 32px 0;
+  }
+  dd{
+    width:80%;
+    color: #8A969A;
+    font-size:16px;
+    border-bottom:1px solid #F7F7F7;
+    padding: 32px 0;
+  }
+  table{
+    margin-top:32px;
+    width:100%;
+    background-color:red;
+    text-align:center;
+    border: 1px solid #F7F7F7;
+  }
+  th{
+    background-color:#68B9CE;
+    color:#fff;
+    height:48px;
+    line-height:48px;
+    border: 1px solid #F7F7F7;
+  }
+  td{
+    background-color:#fff;
+    color:#AAAAAA;
+    height:48px;
+    line-height:48px;
+    border: 1px solid #F7F7F7;
+  }
+  th:first-child,td:first-child{
+    width:20%;
+  }
+  dt:last-of-type,dd:last-of-type{
+    border: none;
+  }
 }
 `
 

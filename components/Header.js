@@ -123,7 +123,7 @@ const styles = css`
 @media screen and (max-width: 415px) {
    header {
      position: fixed;
-     width:100%;
+     width:100vw;
      height: 74px;
      background-color:#fff;
      box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.08);

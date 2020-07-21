@@ -16,8 +16,10 @@
     "next": "^9.3.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-id-swiper": "^4.0.0",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
+    "swiper": "^6.0.4",
     "webfontloader": "^1.6.28"
   }
 }

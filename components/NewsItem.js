@@ -19,7 +19,6 @@ const NewsItem = (props) => {
 
 const styles = css`
 li {
-  border-top : 1px #F7F7F7 solid;
   padding:  32px 0;
   display:flex;
   width: 100%;
@@ -30,6 +29,9 @@ span{
 .title{
   color: #8A969A;
   text-decoration:underline;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .more{
   margin-left:auto;
