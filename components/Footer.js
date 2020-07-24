@@ -109,9 +109,67 @@ const styles = css`
     display:none;
   }
   footer{
-    height:433px;
     background-color:#fff;
     width:100%;
+  }
+  .footer_inner{
+    margin: 24px;
+    padding-top:24px;
+    position:relative;
+    margin-bottom: 0;
+  }
+  figure{
+    width:165px;
+    margin-bottom:16px;
+  }
+  figure img{
+    width:100%;
+  }
+  address{
+    font-size: 12px;
+    font-family: "Yu-Gothic";
+    color:#AAAAAA;
+    font-weight:100;
+    line-height:1.4em;
+    letter-spacing: 0.2em;
+  }
+  address > p:nth-child(3){
+    margin-top:16px;
+  }
+  nav{
+    margin-top:40px;
+  }
+  nav ul li{
+    color: #68B9CE;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:24px;
+  }
+  small{
+    width:100%;
+    margin: 0 auto;
+    text-align:center;
+    display:inline-block;
+    margin-top:40px;
+    padding: 24px 0 24px;
+    font-family:"Yu-Gothic";
+    font-size:11px;
+    font-weight: 100;
+    color:#AAAAAA;
+    border-top: 1px solid #F7F7F7;
+    background-color:#fff;
+  }
+  .back_top{
+    position:absolute;
+    width:56px;
+    height:56px;
+    border-radius:56px;
+    background-color:#fff;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.08);
+    right:0;
+    top:-28px;
+    line-height:60px;
+    text-align:center;
   }
 }
 `

@@ -99,15 +99,26 @@ export default <style>{`
     }
     .about_inner{
       background-color: #fff;
-      padding: 100px 120px　0px;
+      padding: 100px 0px 0px;
+      display:flex;
+    }
+    .greeting_inner{
+      background-color: #fff;
       display:flex;
     }
     .about_left{
-      width:394px;
+      width:44%;
+    }
+    .greeting_left{
+      width:44%;
+    }
+    .greeting_right{
+      width: 60%;
+      position:absolute;
+      right:-40px;
     }
     .about_right{
       width: 60%;
-      margin: 0 auto;
     }
     .about_right ul{
       display: flex;
@@ -462,11 +473,104 @@ export default <style>{`
       font-size:24px;
       text-align:center;
     }
-
-
-
-
-
+    .instagram{
+      padding:80px 24px 120px;
+      background-color:#fff;
+    }
+    .instagram h2{
+      color:${blue};
+      font-size: 24px;
+      width: 100%;
+      text-align:center;
+    }
+    .instagram_wrapper{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      align-items:flex-start;
+    }
+    .instagram_item{
+      background-color:#F7F7F7;
+      width:47%;
+      margin-top:24px;
+      position: relative;
+    }
+    .instagram_item::before{
+      content: "";
+      display: block;
+      padding-top : 100%;
+    }
+    .instagram_item img{
+      width: 100%;
+      height:100%;
+      position: absolute;
+      top: 0;
+      object-fit: cover;
+    }
+    .sub{
+      background-color:#fff;
+      padding:24px 24px;
+      border-top: 1px solid #F7F7F7;
+    }
+    .sub h3{
+      color:${blue};
+      font-size:24px;
+    }
+    .sub p{
+      color:${gray};
+      margin-top:48px;
+      font-size: 16px;
+      line-height:1.8em;
+    }
+    .sub .name{
+      color:${blue};
+      font-size:20px;
+      margin-top:0;
+    }
+    .sub .name span{
+      font-size:16px;
+      display:block;
+    }
+    .sub p dt {
+      color:${blue};
+      margin-top:16px;
+    }
+    .sub p dd {
+      margin-bottom:16px;
+    }
+    .sub span{
+      color:${blue};
+    }
+    .post-contents h1 {
+      font-size: 28px;
+      color: ${blue};
+      margin: 24px 0;
+    }
+    .post-contents h2 {
+      font-size: 22px;
+      color: ${gray};
+      margin: 16px 0;
+    }
+    .post-contents p{
+      margin: 0;
+    }
+    .post-date{
+      padding : 0px 120px 24px;
+      background-color: #fff;
+      color: ${gray};
+    }
+    .greeting_right{
+      position: absolute;
+      top: 25vh;
+      width: 87%;
+      right: -35px;
+    }
+    .greeting_left{
+      padding-top: 24vh;
+    }
+    html{
+      overflow-x:hidden;
+    }
   }
 
   `}</style>

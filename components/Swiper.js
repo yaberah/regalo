@@ -14,18 +14,15 @@ class SimpleSwiper extends React.Component {
           type: 'bullets',
           clickable: true
         },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-        spaceBetween: 100
+        spaceBetween: 24,
+        width: 303,
       }
     }
   }
   render() {
     return(
       <div className="swipe_wrapper">
-        <Swiper >
+        <Swiper {...this.state.params}>
           <div className="voice_card">
             <figure><img src="../static/Icon_girls.png" alt="女性"/></figure>
             <span>横浜市 29歳 女性</span>
@@ -51,17 +48,18 @@ class SimpleSwiper extends React.Component {
 const styles = css`
   .swipe_wrapper{
     background-color:#F9FCFD;
-    padding:40px 0 64px 24px;
+    padding:40px 0 64px 12px;
     margin-top:-24px;
   }
   .voice_card{
     width:261px;
     height:280px;
-    box-shadow: 0px 2px 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 10px 0 rgba(0,0,0,0.08);
     border-radius: 10px;
     background-color:#fff;
     padding:24px;
     box-sizing: border-box;
+    margin:12px;
   }
   .voice_card:last-child{
     margin-right:0px;

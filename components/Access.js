@@ -3,7 +3,7 @@ import css from 'styled-jsx/css';
 import Map from './Map';
 
 const Access = ( props ) => {
-  const map_style = props.type === 'top' ? 'top' : 'sub';
+  const map_style = props.type === 'top' ? 'top' : 'subpage';
   return(
     <section className={map_style}>
       <div className="map_wrapper">
@@ -84,7 +84,7 @@ const styles = css`
     transform: translateX(-50%);
     height:500px;
   }
-  .sub .map_wrapper{
+  .subpage .map_wrapper{
     background-color:gray;
     width:100%;
     position:relative;
@@ -140,6 +140,66 @@ const styles = css`
   }
   th:first-child,td:first-child{
     width:20%;
+  }
+  dt:last-of-type,dd:last-of-type{
+    border: none;
+  }
+}
+@media screen and (max-width: 415px) {
+  .pc{
+    display:none !important;
+  }
+  .subpage .map_wrapper{
+    background-color:gray;
+    width:100%;
+    height:320px;
+  }
+  section{
+    background-color: #fff;
+  }
+  .top .map_wrapper{
+    height:320px;
+    padding-top:80px;
+  }
+  address{
+    padding: 0px 24px;
+    line-height:1.4em;
+  }
+  address dt{
+    margin-top: 32px;
+    color: #42B4D1;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  address dd{
+    color: #8A969A;
+    font-size: 14px;
+    padding-bottom:32px;
+    border-bottom: 1px solid #F7F7F7;
+  }
+  table{
+    margin-top:24px;
+    width:100%;
+    text-align:center;
+    border: 1px solid #F7F7F7;
+    font-size: 11px;
+  }
+  th{
+    background-color:#68B9CE;
+    color:#fff;
+    height:36px;
+    line-height:48px;
+    border: 1px solid #F7F7F7;
+  }
+  td{
+    background-color:#fff;
+    color:#AAAAAA;
+    height:36px;
+    line-height:48px;
+    border: 1px solid #F7F7F7;
+  }
+  th:first-child,td:first-child{
+    width:22%;
   }
   dt:last-of-type,dd:last-of-type{
     border: none;

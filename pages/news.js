@@ -68,34 +68,44 @@ export const getStaticProps = async () => {
 }
 
 const styles = css`
-.year {
-  display:flex;
-  font-size: 20px;
-  padding-bottom:40px;
+@media screen and (mix-width: 415px) {
+  .sp{
+    display:none !important;
+  }
+  .year {
+    display:flex;
+    font-size: 20px;
+    padding-bottom:40px;
+  }
+  .year li::after {
+    content: "/";
+    display: inline-block;
+    color: #42B4D1;
+    padding: 0 24px;
+  }
+  .year li:last-child::after{
+    content: none;
+  }
+  .article-list{
+    margin-bottom:72px;
+  }
+  .pager{
+    margin-bottom:200px;
+    font-size: 20px;
+  }
+  .pager ul{
+    display:flex;
+    justify-content :center;
+  }
+  .pager ul li{
+    width: 20px;
+    margin-right:20px;
+  }
 }
-.year li::after {
-  content: "/";
-  display: inline-block;
-  color: #42B4D1;
-  padding: 0 24px;
-}
-.year li:last-child::after{
-  content: none;
-}
-.article-list{
-  margin-bottom:72px;
-}
-.pager{
-  margin-bottom:200px;
-  font-size: 20px;
-}
-.pager ul{
-  display:flex;
-  justify-content :center;
-}
-.pager ul li{
-  width: 20px;
-  margin-right:20px;
+@media screen and (max-width: 415px) {
+  .pc{
+    display:none !important;
+  }
 }
 `
 
