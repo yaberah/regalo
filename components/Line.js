@@ -4,15 +4,13 @@ import css from 'styled-jsx/css'
 
 const Line = () => {
   return(
-    <NextLink href="#">
-      <a>
+      <a href="https://lin.ee/7SRSgNo">
         <div className="lineat">
           <figure><img src="../static/logo_line.svg" alt="lineのアイコン"/></figure>
           <span>LINEでご予約</span>
         </div>
         <style jsx>{styles}</style>
       </a>
-    </NextLink>
   )
 }
 

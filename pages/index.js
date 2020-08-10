@@ -21,8 +21,8 @@ const top = ({ instagramPosts, mapData, allPosts }) => {
           <section className="fv">
             <div className="fv_left">
               <h2>Make you smile.</h2>
-              <h1>笑顔を届ける<br />美容整体サロン</h1>
-              <p>REGALO(レガ-ロ)は患者の皆様に笑顔を届ける、横浜にある美容整体サロンです。体のお悩みを持つ患者ひとりひとりに寄り添い、健やかで気持ちのよい暮らしをお手伝い致します。</p>
+              <h1>笑顔を届ける<br />スポーツ整体サロン</h1>
+              <p>Regalo（レガーロ）は、お客様に笑顔を届ける横浜にあるスポーツ整体サロンです。体の悩みを持つお客様1人ひとりと協力させていただき、オーダーメイドのメニューで人生を変えるお手伝い致します。</p>
               <Button href="#contact" type="primary">ご予約・お問い合わせ</Button>
               <Button href="/about" type="secondary">REGALOについて</Button>
             </div>
@@ -51,15 +51,16 @@ const top = ({ instagramPosts, mapData, allPosts }) => {
           <div className="about_inner">
             <div className="about_left">
               <h2>体の健康は、<br />心の健康。</h2>
-              <p>肩こり、腰痛、頭痛、関節痛、生理痛皆さんは体に不調はありませんか？<br/><br/>このような不調があると、体が辛いだけでなく、気分も落ち込んでしまいます。REGALO(レガ-ロ)では患者の皆さんの不調を改善できる背術を提供し、体だけでなく心も健康になれるようにサポート致します。<br/><br/>ぜひ体の不調をお持ちの方は、一度お越しください。</p>
+              <p>お体の悩みや結果を出すことを諦めていませんか？<br/><br/>体の悩みは、簡単には根本的に解決できるものではありません。しかし、悩みが解決でき、スポーツや趣味で取り組んでいるものに結果が出せたら人生が変わります。Regaloでは、お客様のお体の悩みを解決し、
+                結果を出すことで、人生を変えるサポートを致します。<br/><br/>ぜひ、お体の悩みのある方、結果が出ずに悩んでる方は、一度お越しください</p>
             </div>
             <div className="about_right">
               <ul>
-                <li><figure></figure><span>肩こり</span></li>
-                <li><figure></figure><span>腰痛</span></li>
-                <li><figure></figure><span>頭痛</span></li>
-                <li><figure></figure><span>関節痛</span></li>
-                <li><figure></figure><span>生理痛</span></li>
+                <li><figure><img src="../static/injury.svg" alt="怪我しやすい"/></figure><span>怪我しやすい</span></li>
+                <li><figure><img src="../static/lose.svg" alt="結果が出ない"/></figure><span>結果が出ない</span></li>
+                <li><figure><img src="../static/shoulder_pain.svg" alt="肩痛"/></figure><span>肩痛</span></li>
+                <li><figure><img src="../static/waist_pain.svg" alt="腰痛"/></figure><span>腰痛</span></li>
+                <li><figure><img src="../static/knee_pain.svg" alt="膝痛"/></figure><span>膝痛</span></li>
               </ul>
             </div>
           </div>

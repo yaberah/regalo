@@ -35,7 +35,9 @@ export default <style>{`
       align-items: center;
     }
     .fv_left{
-      width:394px;
+      width:500px;
+      postion:absolute;
+      top:160px;
     }
     .fv h2{
       color: ${blue};
@@ -145,9 +147,6 @@ export default <style>{`
       color:#8A969A;
     }
     .about_right figure{
-      height:150px;
-      border-radius: 150px;
-      background-color:#F7F7F7;
     }
     .about h2 {
       font-size: 54px;
@@ -287,12 +286,48 @@ export default <style>{`
     .sub h3{
       color:${blue};
       font-size:40px;
+      margin-top:32px;
+    }
+    .sub h4{
+      color:${blue};
+      font-size:22px;
+      margin-top:24px;
     }
     .sub p{
       color:${gray};
-      margin-top:48px;
+      margin-top:16px;
       font-size: 16px;
       line-height:1.8em;
+    }
+    .sub .flow{
+      margin-top:40px;
+      width:100%;
+      display: flex;
+      justify-content:space-between ;
+    }
+    .sub .description{
+      margin-right:32px;
+      width:50%;
+    }
+    .sub .flow .photo{
+      width:50%;
+      height:300px;
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
+    .sub .flow:nth-child(2) .photo {
+      background-image: url("../static/flow_1.jpg");
+    }
+    .sub .flow:nth-child(3) .photo {
+      background-image: url("../static/flow_2.jpg");
+      background-position-y: center;
+    }
+    .sub .flow:nth-child(4) .photo {
+      background-image: url("../static/flow_3.jpg");
+    }
+    .sub .flow:nth-child(5) .photo {
+      background-image: url("../static/flow_4.jpg");
+      background-position-y: center;
     }
     .sub .name{
       color:${blue};
@@ -436,29 +471,24 @@ export default <style>{`
     .about_right ul{
       display: flex;
       flex-wrap:wrap;
-      justify-content:center;
+      justify-content:space-between;
       margin-top:40px;
     }
     .about_right ul li{
-      width: 96px;
+      width: 45%;
       font-size:12px;
       color:${gray};
       text-align:center;
       margin-bottom:24px;
+    }
+    .about_right ul li img{
+      width: 100%;
     }
     .about_right ul li:nth-child(2){
       margin: 0px 10px;
     }
     .about_right ul li:nth-child(5){
       padding-left:20px;
-    }
-    .about_right ul li::before{
-      content: "";
-      display:block;
-      background-color:#F7F7F7;
-      width:96px;
-      height:96px;
-      border-radius:96px;
     }
     .about_button{
       margin-top:24px;
@@ -515,10 +545,51 @@ export default <style>{`
     .sub h3{
       color:${blue};
       font-size:24px;
+      margin-top:24px;
+    }
+    .sub h4{
+      color:${blue};
+      font-size:18px;
+      margin-top:16px;
     }
     .sub p{
       color:${gray};
-      margin-top:48px;
+      margin-top:16px;
+      font-size: 16px;
+      line-height:1.8em;
+    }
+    .sub .flow{
+      margin-top:40px;
+      width:100%;
+    }
+    .sub .description{
+      margin-right:32px;
+      width:100%;
+    }
+    .sub .flow .photo{
+      width:100%;
+      margin-top:24px;
+      height:200px;
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
+    .sub .flow:nth-child(2) .photo {
+      background-image: url("../static/flow_1.jpg");
+    }
+    .sub .flow:nth-child(3) .photo {
+      background-image: url("../static/flow_2.jpg");
+      background-position-y: center;
+    }
+    .sub .flow:nth-child(4) .photo {
+      background-image: url("../static/flow_3.jpg");
+    }
+    .sub .flow:nth-child(5) .photo {
+      background-image: url("../static/flow_4.jpg");
+      background-position-y: center;
+    }
+    .sub p{
+      color:${gray};
+      margin-top:16px;
       font-size: 16px;
       line-height:1.8em;
     }
