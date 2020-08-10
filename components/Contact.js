@@ -12,9 +12,7 @@ const Contact = () => {
           <p>受付時間 9:00-13:00 / 14:30-17:00<br/>(定休日 日曜日・祝日)</p>
         </address>
         <div className="line">
-          <NextLink href="#">
-            <a><img src="../static/Icon_line_white.svg" alt="line"/>LINEでのご予約</a>
-          </NextLink>
+            <a href="https://lin.ee/7SRSgNo" target="_blank"><img src="../static/Icon_line_white.svg" alt="line"/>LINEでのご予約</a>
         </div>
       </div>
       <style jsx>{styles}</style>

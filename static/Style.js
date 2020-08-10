@@ -6,6 +6,7 @@ const gray = "#8A969A";
 export default <style>{`
   html{
     font-family: fot-tsukuardgothic-std,sans-serif;
+    scroll-behavior: smooth;
   }
   @media screen and (min-width: 415px) {
     .sp{
@@ -24,7 +25,7 @@ export default <style>{`
       text-decoration: none;
       color:${blue};
     }
-    .wrapper{
+    #wrapper{
       width: 1200px;
       margin: 0 auto;
     }
@@ -430,9 +431,6 @@ export default <style>{`
     .news{
       width: 100%;
       background-color: #fff;
-      display:flex;
-      flex-wrap: wrap;
-      align-items: center;
       padding: 32px 24px 40px 24px;
       box-sizing: border-box;
     }
@@ -626,7 +624,7 @@ export default <style>{`
       margin: 0;
     }
     .post-date{
-      padding : 0px 120px 24px;
+      padding : 0px 24px 24px;
       background-color: #fff;
       color: ${gray};
     }
@@ -641,6 +639,7 @@ export default <style>{`
     }
     html{
       overflow-x:hidden;
+      scroll-behavior: smooth;
     }
   }
 

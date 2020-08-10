@@ -4,9 +4,9 @@ import css from 'styled-jsx/css'
 
 const Line = () => {
   return(
-      <a href="https://lin.ee/7SRSgNo">
+      <a href="https://lin.ee/7SRSgNo" target="_blank">
         <div className="lineat">
-          <figure><img src="../static/logo_line.svg" alt="lineのアイコン"/></figure>
+          <figure><img src="../static/logo_line.svg" alt="lineのアイコン" /></figure>
           <span>LINEでご予約</span>
         </div>
         <style jsx>{styles}</style>

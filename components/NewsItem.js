@@ -18,10 +18,7 @@ const NewsItem = (props) => {
 }
 
 const styles = css`
-@media screen and (mix-width: 415px) {
-  .sp{
-    display:none !important;
-  }
+@media screen and (min-width: 415px) {
   li {
     padding:  32px 0;
     display:flex;
@@ -38,6 +35,7 @@ const styles = css`
     overflow: hidden;
   }
   .more{
+    color:#68B9CE;
     margin-left:auto;
   }
   .more::after{
@@ -50,12 +48,10 @@ const styles = css`
   }
 }
 @media screen and (max-width: 415px) {
-  .pc{
-    display:none !important;
-  }
   li{
     padding:24px 0;
     border-bottom:1px solid #F7F7F7;
+    list-style-type:none;
   }
   span{
     font-size:14px;

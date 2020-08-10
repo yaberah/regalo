@@ -24,7 +24,7 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
-        <NextLink href="#"><a className="back_top"><img src="../static/Icon_arrow2.svg"/></a></NextLink>
+        <NextLink href="#wrapper"><a className="back_top"><img src="../static/Icon_arrow2.svg"/></a></NextLink>
         <small>Copyright © 2020 Regalo. All Rights Reserved.</small>
       </div>
       <style jsx>{styles}</style>

@@ -15,7 +15,7 @@ const top = ({ instagramPosts, mapData, allPosts }) => {
   const recentNews = allPosts.contents[0];
   const date = new Date(recentNews.updatedAt);
   return(
-    <div className="wrapper">
+    <div id="wrapper">
       <Layout>
         <div className="fv_wrapper">
           <section className="fv">

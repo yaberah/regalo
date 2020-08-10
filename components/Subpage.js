@@ -46,7 +46,6 @@ const styles = css`
     letter-spacing: 0.15em;
     display:flex;
     align-items: center;
-    border-bottom:1px #F7F7F7 solid;
   }
   span{
     font-size:12px;

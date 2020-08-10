@@ -10,7 +10,7 @@ import css from 'styled-jsx/css';
 
 const Layout = ({children}) => {
   return(
-    <div className="wrapper">
+    <div id="wrapper">
       <Head>
         <title>横浜のスポーツ整体サロン | Regalo</title>
         <script src="https://use.typekit.net/zzl2axt.js"></script>
