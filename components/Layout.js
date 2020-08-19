@@ -24,7 +24,8 @@ const Layout = ({children}) => {
         <meta property="og:description" content="横浜（白楽駅徒歩7分）にあるスポーツ整体サロン。体の悩みを解決するオーダーメイドのメニューを提供いたします。" />
         <meta property="og:site_name" content="Regalo" />
         <meta property="og:image" content="../static/OGP.png" />
-        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="og:image" content="../static/OGP.png" />
       </Head>
       {Reset}
       {Style}
