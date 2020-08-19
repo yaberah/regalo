@@ -24,7 +24,7 @@ class SimpleSwiper extends React.Component {
       <div className="swipe_wrapper">
         <Swiper {...this.state.params}>
           <div className="voice_card">
-            <figure><img src="../static/Icon_girls.png" alt="女性"/></figure>
+            <figure><img src="../static/Icon_boys.png" alt="女性"/></figure>
             <span>横浜市 45歳 男性</span>
             <p>膝の痛みが解消して趣味の登山が再開でき、レベルアップに繋がりました。根本的な体の仕組みを説明してくれるので施術の理由や意味がよくわかりました。</p>
           </div>
@@ -34,7 +34,7 @@ class SimpleSwiper extends React.Component {
             <p>先生に自分の弱いところのトレーニングを教えてもらってからチアダンスのオーディションでトップを取れました。技が上手く出来るようになって嬉しかったです。</p>
           </div>
           <div className="voice_card">
-            <figure><img src="../static/Icon_girls.png" alt="女性"/></figure>
+            <figure><img src="../static/Icon_boys.png" alt="女性"/></figure>
             <span>藤沢市 22歳 男性</span>
             <p>昔から痛かった肩の痛みの理由がわかって、施術とトレーニングをして痛みがなくなりました。これからはもっと速い球を投げることを目指します。</p>
           </div>

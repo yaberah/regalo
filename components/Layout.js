@@ -25,7 +25,7 @@ const Layout = ({children}) => {
         <meta property="og:site_name" content="Regalo" />
         <meta property="og:image" content="../static/OGP.png" />
         <meta name="twitter:card" content="summary_large_image"/>
-        <meta property="og:image" content="../static/OGP.png" />
+        <meta property="og:image" content="https://regalo-salon.work/static/OGP.png" />
       </Head>
       {Reset}
       {Style}
