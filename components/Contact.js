@@ -10,7 +10,7 @@ const Contact = () => {
         {/*
         <address>
           <a href="tel:09061069510"><img src="../static/Icon_telephone_white.svg" alt="telephone"/>090-6106-9510</a>
-          <p>受付時間 9:00-13:00 / 14:30-17:00<br/>(定休日 日曜日・祝日)</p>
+          <p>受付時間 9:00-13:00 / 14:30-17:00<br/>(定休日 平日日中)</p>
         </address>
         */}
         <div className="line">
