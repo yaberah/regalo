@@ -7,10 +7,12 @@ const Contact = () => {
     <section id="contact">
       <h2>ご予約・お問い合わせはこちらから</h2>
       <div>
+        {/*
         <address>
           <a href="tel:09061069510"><img src="../static/Icon_telephone_white.svg" alt="telephone"/>090-6106-9510</a>
           <p>受付時間 9:00-13:00 / 14:30-17:00<br/>(定休日 日曜日・祝日)</p>
         </address>
+        */}
         <div className="line">
             <a href="https://lin.ee/7SRSgNo" target="_blank"><img src="../static/Icon_line_white.svg" alt="line"/>LINEでのご予約</a>
         </div>
@@ -60,6 +62,7 @@ const styles = css`
     display: flex;
     position:relative;
     z-index:10;
+    height: 50%;
   }
   address{
     width:50%;
@@ -83,7 +86,7 @@ const styles = css`
     line-height:1.5em;
   }
   .line{
-    width:50%;
+    width:100%;
     text-align:center;
   }
   .line a{

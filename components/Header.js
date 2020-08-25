@@ -28,10 +28,12 @@ class Header extends React.Component {
             <li><NextLink href="/access"><a>アクセス</a></NextLink></li>
           </ul>
         </nav>
+        {/*
         <div className="telephone pc">
           <p><img src="../static/Icon_telephone.svg" /><a href="tel:09061069510">090-6106-9510</a></p>
           <span>受付時間 9:00-13:00 / 14:30-17:00</span>
         </div>
+        */}
         <NextLink href="#contact">
           <a className="button pc">ご予約・お問い合わせ<img src="../static/Icon_arrow.svg" /></a>
         </NextLink>
@@ -49,6 +51,7 @@ class Header extends React.Component {
               <li><NextLink href="/access"><a>アクセス</a></NextLink></li>
             </ul>
           </nav>
+          {/*
           <a href="tel:09061069510" className="telephone">
             <div>
               <p>電話をかける</p>
@@ -56,6 +59,7 @@ class Header extends React.Component {
             </div>
           </a>
           <span className="business-hours">受付時間 9:00 - 13:00 / 14:30 - 17:00 <br/>(定休日 日曜日・祝日)</span>
+          */}
         </div>
 
         <style jsx>{styles}</style>
