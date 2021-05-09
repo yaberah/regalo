@@ -12,8 +12,8 @@ import { microcmsAPI } from '../lib/microcms';
 
 const top = ({ instagramPosts, mapData, allPosts }) => {
 
-  // const recentNews = allPosts.contents[0];
-  // const date = new Date(recentNews.updatedAt);
+  const recentNews = allPosts.contents[0];
+  const date = new Date(recentNews.updatedAt);
   return(
     <div id="wrapper">
       <Layout>
@@ -40,11 +40,11 @@ const top = ({ instagramPosts, mapData, allPosts }) => {
 
         <section className="news">
           <h2>NEWS</h2>
-          {/* <NewsItem
+          <NewsItem
             date={date.toLocaleDateString()}
             title={recentNews.title}
             id={recentNews.id}
-          /> */}
+          />
         </section>
 
         <section className="about">
@@ -76,23 +76,23 @@ const top = ({ instagramPosts, mapData, allPosts }) => {
           </div>
         </section>
 
-        {/* <Access
+        <Access
           type="top"
           apiKey={mapData.key}
           lat={mapData.lat}
           lng={mapData.lng}
           defaultZoom={mapData.defaultZoom}
-          /> */}
-        <section className="instagram">
+          />
+        {/* <section className="instagram">
           <h2>INSTAGRAM</h2>
-          {/* <div className="instagram_wrapper">
+          <div className="instagram_wrapper">
             {instagramPosts.data.slice(0,8).map( (instagramPost) => {
               return (
                 <div className="instagram_item"><img src={instagramPost.media_url} alt=""/></div>
               )
             })}
-          </div> */}
-        </section>
+          </div>
+        </section> */}
 
 
       </Layout>
@@ -101,11 +101,10 @@ const top = ({ instagramPosts, mapData, allPosts }) => {
 }
 
 export const getStaticProps = async () => {
-  // const instagramPosts = await instagramAPI() || [];
-  // const mapData = await googlemapsAPI() || [];
+  const instagramPosts = await instagramAPI() || [];
+  const mapData = await googlemapsAPI() || [];
   const allPosts = await microcmsAPI() || [];
-  // return { props : { instagramPosts, mapData, allPosts } }
-  return { props : { allPosts } }
+  return { props : { instagramPosts, mapData, allPosts } }
 }
 
 export default top;
