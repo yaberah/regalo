@@ -2,6 +2,7 @@ import css from 'styled-jsx/css';
 
 const blue = "#68B9CE";
 const gray = "#8A969A";
+const bordergray = "#F7F7F7";
 
 export default <style>{`
   html{
@@ -288,6 +289,8 @@ export default <style>{`
       color:${blue};
       font-size:40px;
       margin-top:32px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid ${bordergray};
     }
     .sub h4{
       color:${blue};
