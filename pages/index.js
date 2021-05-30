@@ -83,16 +83,16 @@ const top = ({ instagramPosts, mapData, allPosts }) => {
           lng={mapData.lng}
           defaultZoom={mapData.defaultZoom}
           />
-        {/* <section className="instagram">
+        <section className="instagram">
           <h2>INSTAGRAM</h2>
           <div className="instagram_wrapper">
-            {instagramPosts.data.slice(0,8).map( (instagramPost) => {
+            {instagramPosts.data ? instagramPosts.data.slice(0,8).map( (instagramPost) => {
               return (
                 <div className="instagram_item"><img src={instagramPost.media_url} alt=""/></div>
               )
-            })}
+            }) : ''}
           </div>
-        </section> */}
+        </section>
 
 
       </Layout>

@@ -5,12 +5,17 @@ Salon web page using nextjs
 vercelで構築
 
 ```
-$ vercel dev
+$ yarn dev
 ```
+で```.env.development.local```の環境変数を利用できる。
 
-## 本番デプロイ
+## プレビューデプロイ
 ```
 $ vercel deploy
+```
+## 本番デプロイ
+```
+$ vercel --prod
 ```
 
 ## 環境変数
@@ -19,8 +24,8 @@ $ vercel deploy
 .env.development.local
 を作成
 
-MICROCMS_API_TOKEN
-GOOGLE_API_KEY
-INSTAGRAM_ACCEASS_TOKEN
+- MICROCMS_API_TOKEN
+- GOOGLE_API_KEY
+- INSTAGRAM_ACCEASS_TOKEN
 上記3つのsecret keyを設定する
 （本番の環境変数はVercel上で行う）
