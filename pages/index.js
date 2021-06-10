@@ -22,7 +22,7 @@ const top = ({ instagramPosts, mapData, allPosts }) => {
             <div className="fv_left">
               <h2>Make you smile.</h2>
               <h1>笑顔を届ける<br />スポーツ整体サロン</h1>
-              <p>Regalo（レガーロ）は、お客様に笑顔を届ける横浜にあるスポーツ整体サロンです。体の悩みを持つお客様1人ひとりと協力させていただき、オーダーメイドのメニューで人生を変えるお手伝い致します。</p>
+              <p>Regalo（レガーロ）は、お客様に笑顔を届ける横浜白楽にあるスポーツ整体サロンです。体の悩みを持つお客様1人ひとりと協力させていただき、オーダーメイドのメニューで人生を変えるお手伝い致します。</p>
               <Button href="#contact" type="primary">ご予約・お問い合わせ</Button>
               <Button href="/about" type="secondary">REGALOについて</Button>
             </div>
